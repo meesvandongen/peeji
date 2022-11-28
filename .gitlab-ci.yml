@@ -1,0 +1,23 @@
+# A Docker image to be used to build your app
+image: node:lts
+
+stages:
+  - test
+  - pages
+
+test:
+  stage: test
+  script:
+    - npm run test
+
+pages:
+  stage: pages
+  script:
+    - npm run docs
+
+  artifacts:
+    paths:
+      - public
+
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
