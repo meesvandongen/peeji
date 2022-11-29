@@ -1,26 +1,19 @@
 {
   "name": "peeji",
-  "version": "1.0.0",
-  "description": "Pagination utility",
-  "source": "src/peeji.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
-  "scripts": {
-    "test": "vitest",
-    "dev": "parcel watch",
-    "build": "parcel build",
-    "docs": "npx @11ty/eleventy --output=public",
-    "docs:watch": "npx @11ty/eleventy --output=public --serve"
-  },
-  "author": "Mees van Dongen",
-  "license": "MIT",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@parcel/packager-ts": "^2.8.0",
-    "@parcel/transformer-typescript-types": "^2.8.0",
-    "parcel": "^2.8.0",
-    "typescript": "^4.9.3",
-    "vitest": "^0.25.3"
+    "turbo": "^1.6.3"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
+  },
+  "dependencies": {
+    "@docusaurus/theme-live-codeblock": "^2.2.0"
   }
 }

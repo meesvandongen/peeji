@@ -12,12 +12,15 @@ test:
 
 pages:
   stage: pages
+  cache:
+    paths:
+      - node_modules/
+      - public/
+      - .cache/
   script:
     - npm run docs
-
   artifacts:
     paths:
       - public
-
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
