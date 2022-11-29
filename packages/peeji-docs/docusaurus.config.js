@@ -8,7 +8,7 @@ const config = {
   title: "Peeji",
   tagline: "Simple pagination",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/peeji",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo_peeji.png",
