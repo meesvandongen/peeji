@@ -1,6 +1,7 @@
 {
   "name": "peeji",
   "version": "1.0.0",
+  "private": false,
   "description": "Pagination utility",
   "source": "src/peeji.ts",
   "main": "dist/main.js",
