@@ -29,7 +29,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/meesvandongen/peeji/tree/main/packages/peeji-docs/",
           routeBasePath: "/",
         },
         blog: false,
@@ -52,7 +52,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/meesvandongen/peeji.git",
             label: "GitHub",
             position: "right",
           },
