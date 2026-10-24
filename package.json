@@ -1,20 +1,15 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
-    "turbo": "^1.6.3"
+    "vite-plus": "catalog:"
   },
   "scripts": {
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "dev": "turbo run dev",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "build": "vp run -r build",
+    "test": "vp run -r test",
+    "lint": "vp lint",
+    "dev": "vp run -r --parallel dev",
+    "publish-packages": "pnpm run build && pnpm run lint && pnpm run test && changeset version && changeset publish"
   },
-  "dependencies": {
-    "@docusaurus/theme-live-codeblock": "^2.2.0"
-  }
+  "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
 }
