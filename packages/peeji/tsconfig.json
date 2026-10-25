@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "types": ["vitest/globals"],
+    "types": ["vite-plus/test/globals"],
     "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "skipLibCheck": true,
     "esModuleInterop": true
   }

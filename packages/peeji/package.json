@@ -8,9 +8,9 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "scripts": {
-    "test": "vitest",
-    "dev": "parcel watch",
-    "build": "parcel build"
+    "test": "vp test",
+    "dev": "vp pack --watch",
+    "build": "vp pack"
   },
   "author": "Mees van Dongen",
   "license": "MIT",
@@ -29,13 +29,8 @@
     "headless"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@parcel/packager-ts": "^2.8.0",
-    "@parcel/transformer-typescript-types": "^2.8.0",
-    "parcel": "^2.8.0",
-    "turbo": "^1.6.3",
-    "typescript": "^4.9.3",
-    "vitest": "^0.25.3"
+    "typescript": "^5.9.3",
+    "vite-plus": "catalog:"
   },
   "dependencies": {}
 }
